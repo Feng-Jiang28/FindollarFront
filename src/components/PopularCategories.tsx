@@ -9,7 +9,6 @@ const PopularCategories = () => {
     {title: 'Furniture', imgSrc: '/img/furnitures.jpg', items: 200},
     {title: 'Entertainments', imgSrc: '/img/entertainments.jpg', items: 167},
     {title: 'Others', imgSrc: '/img/others.jpg', items: 213}
-
   ];
 
   return(

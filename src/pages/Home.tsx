@@ -11,9 +11,16 @@ const Home = () => {
 
   return(
     <div className="bg-gray-100 min-h-screen p-8">
+
+      {/*Xiaoshu*/}
       <TopSection/>
+      {/*Xiaoshu*/}
+      {/*jiawen*/}
       <HeroSection/>
+      {/*jiawen*/}
+      {/*Feng*/}
       <PopularCategories/>
+      {/*Feng*/}
       <Recommendation/>
       <Footer/>
     </div>
