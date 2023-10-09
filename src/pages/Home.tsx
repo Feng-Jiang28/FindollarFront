@@ -1,8 +1,9 @@
 import React from 'react';
 import PopularCategories from "@/components/PopularCategories";
 import Recommendation from "@/components/Recommendation"
+import Navbar from "@/components/Navbar";
 
-const TopSection = () => <div className="p-6 bg-blue-200">Navbar</div>
+
 const HeroSection = () => <div className="p-6 bg-green-200">hero</div>
 
 //const Recommendation = () => <div className="p-6 bg-gray-200">Recommendation</div>
@@ -13,7 +14,8 @@ const Home = () => {
     <div className="bg-gray-100 min-h-screen p-8">
 
       {/*Xiaoshu*/}
-      <TopSection />
+      <Navbar />
+
       {/*Xiaoshu*/}
       {/*jiawen*/}
       <HeroSection />

@@ -1,1 +1,14 @@
-import PopularCategories from "@/components/PopularCategories";
+import React from 'react';
+import Navbar from "@/components/Navbar";
+
+const TestNavbar = () => {
+
+  return(
+    <div>
+      <Navbar/>
+    </div>
+  );
+
+};
+
+export default TestNavbar;
