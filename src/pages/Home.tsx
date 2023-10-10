@@ -1,7 +1,9 @@
 import React from 'react';
 import PopularCategories from "@/components/PopularCategories";
+import Hero from "@/components/Hero"
 import Recommendation from "@/components/Recommendation"
 import Hero from "@/components/hero";
+
 
 const TopSection = () => <div className="p-6 bg-blue-200">Navbar</div>
 const HeroSection = () => <div className="p-6 bg-green-200">hero</div>
