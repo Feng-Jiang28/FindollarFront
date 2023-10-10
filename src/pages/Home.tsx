@@ -1,5 +1,6 @@
 import React from 'react';
 import PopularCategories from "@/components/PopularCategories";
+import Hero from "@/components/hero";
 
 
 const TopSection = () => <div className="p-6 bg-blue-200">Navbar</div>
@@ -16,7 +17,7 @@ const Home = () => {
       <TopSection/>
       {/*Xiaoshu*/}
       {/*jiawen*/}
-      <HeroSection/>
+      <Hero />
       {/*jiawen*/}
       {/*Feng*/}
       <PopularCategories/>
