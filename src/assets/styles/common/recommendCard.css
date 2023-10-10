@@ -1,0 +1,76 @@
+.recommend-card {
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    width: 183px;
+    height: 324px;
+}
+
+.recommend-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recommend-card .prices {
+
+    margin-top: 10px;
+    text-align: center;
+}
+
+.recommend-card .original-price {
+    color: var(--muted-color, #BDBDBD);
+    text-align: center;
+
+    /* h5 */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.1px;
+    margin-right: 5px;
+}
+
+.recommend-card .discounted-price {
+    color: var(--secondary-color-1, #23856D);
+    text-align: center;
+
+    /* h5 */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.1px;
+}
+
+.recommend-card .title {
+    margin-top: 25px;
+    color: var(--text-color, #252B42);
+    text-align: center;
+
+    /* h5 */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.1px;
+}
+
+.recommend-card .category {
+
+    color: var(--second-text-color, #737373);
+    text-align: center;
+    margin-top: 10px;
+    /* link */
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 171.429% */
+    letter-spacing: 0.2px;
+}
