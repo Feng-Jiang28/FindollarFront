@@ -1,6 +1,5 @@
 import React from 'react';
 import RecommendCard from '../components/common/RecommendCard.tsx';
-import '../assets/styles/recommendation.css'
 
 const Recommendation = () => {
 

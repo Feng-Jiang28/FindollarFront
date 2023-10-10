@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../assets/styles/common/recommendCard.css'
 interface RecommendCardProps {
     imageUrl: string;
     title: string;
