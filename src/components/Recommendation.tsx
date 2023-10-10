@@ -5,7 +5,7 @@ import '../assets/styles/recommendation.css'
 const Recommendation = () => {
 
     return (
-        <div className="container">
+        <div className="recommend-container">
             <div className='left-container'>
                 {/* <div src="https://via.placeholder.com/389X796" alt="Background Image" >
 

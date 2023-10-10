@@ -3,11 +3,7 @@
     flex-wrap: wrap;
     gap: 15px 30px;
     text-align: center;
-    /* 15px between rows and 30px between columns */
     padding: 24px;
-    /* Gap around all 4 directions */
-    /* justify-content: space-between; */
-    /* Ensures that there are 3 cards per row */
     width: calc(3 *183px + 2 * 30px + 2*24px) !important;
 }
 
@@ -52,7 +48,6 @@
 .buttons {
     display: flex;
     gap: 10px;
-    /* Spacing between buttons */
     text-align: right;
     width: 113px;
 
@@ -60,8 +55,6 @@
 }
 
 .btn {
-    /* padding: 5px 15px; */
-    /* cursor: pointer; */
     width: 48px;
     height: 48px;
 }
@@ -70,7 +63,7 @@
     margin-right: 15px;
 }
 
-.container {
+.recommend-container {
     /* height: 796px; */
     display: flex;
     /* justify-content: space-between; */
@@ -98,27 +91,21 @@
 
 .line1 {
     color: var(--text-color, #252B42);
-
-    /* h6 */
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-    /* 171.429% */
     letter-spacing: 0.2px;
     margin-bottom: 5px;
 }
 
 .line2 {
     color: var(--second-text-color, #737373);
-
-    /* h6 */
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px;
-    /* 171.429% */
     letter-spacing: 0.2px;
 }
