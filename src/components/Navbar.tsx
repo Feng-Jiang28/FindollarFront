@@ -4,7 +4,7 @@ import React from 'react';
 const Navbar = () => {
   return (
     <div className="bg-white p-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="w-full flex justify-between items-center">
 
         {/* Logo Section */}
         <div className="flex items-center">
