@@ -4,27 +4,27 @@ import 'antd/dist/reset.css';
 import { AreaChartOutlined,RightOutlined,ClockCircleOutlined } from '@ant-design/icons';
 const { TabPane } = Tabs;
 
-const FeaturedPosts: React.FC = () => {
+const Blog3: React.FC = () => {
     // Dummy data for your cards
     const posts = [
         {
             title: "Loudest à la Madison #1 (L'integral)",
             description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
-            image: "/img/unsplash_dEGu-oCuB1Y.svg",
+            image: "/img/unsplash_3.svg",
             date: "22 April 2021",
             comments: 10
         },
         {
             title: "Loudest à la Madison #1 (L'integral)",
             description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
-            image: "/img/unsplash_hHdHCfAifHU.svg",
+            image: "/img/unsplash_2.svg",
             date: "22 April 2021",
             comments: 10
         },
         {
             title: "Loudest à la Madison #1 (L'integral)",
             description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
-            image: "/img/unsplash_tVEqStC2uz8.svg",
+            image: "/img/unsplash_1.svg",
             date: "22 April 2021",
             comments: 10
         },
@@ -81,4 +81,4 @@ const FeaturedPosts: React.FC = () => {
     );
 }
 
-export default FeaturedPosts;
+export default Blog3;
