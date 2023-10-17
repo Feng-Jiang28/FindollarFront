@@ -1,10 +1,10 @@
-import React from 'react';
+
 import { Card, Button, Tabs} from 'antd';
 import 'antd/dist/reset.css';
 import { AreaChartOutlined,RightOutlined,ClockCircleOutlined } from '@ant-design/icons';
 const { TabPane } = Tabs;
 
-const Blog3: React.FC = () => {
+function Blog3() {
     // Dummy data for your cards
     const posts = [
         {
@@ -38,7 +38,7 @@ const Blog3: React.FC = () => {
             </h1>
             <h2 style={{ color: "#252B42", letterSpacing: "0.2px", lineHeight: "50px" }}
                 className="text-4xl font-bold text-center align-top font-montserrat mb-10">Featured Posts</h2>
-            <div style={{ gap: '30px' }} className="flex items-start justify-center px-0 py-0 custom-gap w-[1045px] h-[606px] ">
+            <div className="flex items-start justify-center mx-auto py-0 w-[1045px] h-[606px] space-x-8 ">
                 {posts.map((post, index) => (
                     <Card
                         key={index}
