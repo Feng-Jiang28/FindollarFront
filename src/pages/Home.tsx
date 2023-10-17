@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Blog3 from '@/components/Blog3';
 
 
+
 const HeroSection = () => <div className="p-6 bg-green-200">hero</div>
 
 //const Recommendation = () => <div className="p-6 bg-gray-200">Recommendation</div>
