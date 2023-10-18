@@ -28,6 +28,7 @@ export const AppProvider = ({ children }: AppProviderProps) => {
           }}
         >
           <Router>{children}</Router>
+          {/* {children} */}
         </ConfigProvider>
       </ErrorBoundary>
     </Suspense>
