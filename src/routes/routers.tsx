@@ -1,7 +1,7 @@
-// import { lazy } from 'react';
+import { lazy } from 'react';
 import PopularCategories from "@/components/PopularCategories";
-// const Home = lazy(() => import('@/pages/Home'));
-import Home from '@/pages/Home';
+const Home = lazy(() => import('@/pages/Home'));
+// import Home from '@/pages/Home';
 
 const routers = [
   {
