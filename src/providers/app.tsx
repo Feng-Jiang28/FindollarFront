@@ -15,22 +15,27 @@ const ErrorFallback = () => {
   );
 };
 
+// export const AppProvider = ({ children }: AppProviderProps) => {
+//   return (
+//     <Suspense fallback={<div>loading...</div>}>
+//       <ErrorBoundary FallbackComponent={ErrorFallback}>
+//         <ConfigProvider
+//           theme={{
+//             token: {
+//               // colorPrimary: '#00b96b',
+//               // colorBgContainer: '#f6ffed',
+//             },
+//           }}
+//         >
+//           {/* <Router>{children}</Router> */}
+//           {children}
+//         </ConfigProvider>
+//       </ErrorBoundary>
+//     </Suspense>
+//   );
+// };
 export const AppProvider = ({ children }: AppProviderProps) => {
-  return (
-    <Suspense fallback={<div>loading...</div>}>
-      <ErrorBoundary FallbackComponent={ErrorFallback}>
-        <ConfigProvider
-          theme={{
-            token: {
-              // colorPrimary: '#00b96b',
-              // colorBgContainer: '#f6ffed',
-            },
-          }}
-        >
-          {/* <Router>{children}</Router> */}
-          {children}
-        </ConfigProvider>
-      </ErrorBoundary>
-    </Suspense>
-  );
-};
+    return (
+            {children}
+    );
+  };

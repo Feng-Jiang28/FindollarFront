@@ -1,11 +1,13 @@
-import { AppProvider } from '@/providers/app';
+// import { AppProvider } from '@/providers/app';
 import { AppRoutes } from '@/routes';
 
 
-const App = () => (
-  <AppProvider>
-    <AppRoutes />
-  </AppProvider>
-);
+function App() {
+//   <AppProvider>
+    return (
+        <AppRoutes />
+    )
+//   </AppProvider>
+};
 
 export default App;
