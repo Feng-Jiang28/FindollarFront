@@ -1,4 +1,3 @@
-import React from 'react';
 import RecommendCard from '../components/common/RecommendCard.tsx';
 
 const Recommendation = () => {
