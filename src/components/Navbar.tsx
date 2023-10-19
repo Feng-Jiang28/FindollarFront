@@ -18,7 +18,7 @@ const Navbar = () => {
                         {/*<a href="#" className="text-gray-600 hover:text-black">Shop</a >*/}
                         {/*<span class="w-full">< img src="/img/Vector.svg" alt="Vector Logo" className="w-5 h-5 mr-2" /></span>*/}
                         <a className="inline-flex items-center h-8 m-2" href="#">
-                            <span className="w-full font-light">Shop</span>
+                            <span className="w-full">Shop</span>
                             {/* TODO: Need to use the svg, do not use images */}
                             < img src="/img/Vector.svg" alt="Vector Logo" className="w-3 h-3 mr-2" />
                         </a >
