@@ -3,6 +3,7 @@ import PopularCategories from "@/components/PopularCategories";
 import Hero from "@/components/Hero"
 import Recommendation from "@/components/Recommendation"
 import Navbar from "@/components/Navbar";
+import Products from "@/components/Products";
 
 
 const HeroSection = () => <div className="p-6 bg-green-200">hero</div>
@@ -25,6 +26,7 @@ const Home = () => {
       <PopularCategories />
       {/*Feng*/}
       <Recommendation />
+      <Products />
       <Footer />
     </div>
   );
