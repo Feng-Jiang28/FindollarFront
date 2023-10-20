@@ -12,10 +12,10 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ imageUrl, title, originalPrice, discountedPrice, discountPercentage, rating, location, soldCount }) => {
     return (
-        <div className="border p-5 rounded-lg w-64">
+        <div className="border rounded-lg w-203 h-352">
             <img src={imageUrl} alt={title} className="w-full rounded-md" />
             
-            <h2 className="text-xl font-semibold mb-2 truncate">{title}</h2>
+            <h2 className="text-sm ml-2 mt-10 text-gray-900 font-semibold mb-2 truncate">{title}</h2>
             <div className="text-2xl mb-3 flex justify-center items-center">
                 <span className="text-gray-500 line-through mr-2">${originalPrice}</span>
                 <span className="text-red-600 font-bold">${discountedPrice}</span>
