@@ -26,7 +26,6 @@ const Home = () => {
       <PopularCategories />
       {/*Feng*/}
       <Recommendation />
-      <Products />
       <Footer />
     </div>
   );
