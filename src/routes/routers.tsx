@@ -2,6 +2,8 @@ import { lazy } from 'react';
 import PopularCategories from "@/components/PopularCategories";
 // const Home = lazy(() => import('@/pages/Home'));
 import Home from '@/pages/Home';
+import Filter from '@/components/Filter';
+import FilterTest from '@/components/FilterTest';
 
 const routers = [
   {
@@ -24,7 +26,7 @@ const routers = [
   },
   {
     path: '/test-component',
-    element:<PopularCategories/>,
+    element:<Filter/>,
   }
 ];
 

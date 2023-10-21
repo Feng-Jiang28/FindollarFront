@@ -5,3 +5,9 @@
 /* .body{
 
 } */
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: orange;
+  border-color: orange;
+}
+
+
