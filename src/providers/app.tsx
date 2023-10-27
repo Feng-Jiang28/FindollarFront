@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
-import { BrowserRouter as Router } from 'react-router-dom';
+// import { BrowserRouter as Router } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
 
 type AppProviderProps = {
@@ -15,21 +15,27 @@ const ErrorFallback = () => {
   );
 };
 
+// export const AppProvider = ({ children }: AppProviderProps) => {
+//   return (
+//     <Suspense fallback={<div>loading...</div>}>
+//       <ErrorBoundary FallbackComponent={ErrorFallback}>
+//         <ConfigProvider
+//           theme={{
+//             token: {
+//               // colorPrimary: '#00b96b',
+//               // colorBgContainer: '#f6ffed',
+//             },
+//           }}
+//         >
+//           {/* <Router>{children}</Router> */}
+//           {children}
+//         </ConfigProvider>
+//       </ErrorBoundary>
+//     </Suspense>
+//   );
+// };
 export const AppProvider = ({ children }: AppProviderProps) => {
-  return (
-    <Suspense fallback={<div>loading...</div>}>
-      <ErrorBoundary FallbackComponent={ErrorFallback}>
-        <ConfigProvider
-          theme={{
-            token: {
-              // colorPrimary: '#00b96b',
-              // colorBgContainer: '#f6ffed',
-            },
-          }}
-        >
-          <Router>{children}</Router>
-        </ConfigProvider>
-      </ErrorBoundary>
-    </Suspense>
-  );
-};
+    return (
+            {children}
+    );
+  };

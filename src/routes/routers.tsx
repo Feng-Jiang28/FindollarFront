@@ -1,13 +1,30 @@
-import React from 'react';
-import { lazy } from 'react';
+
 import PopularCategories from "@/components/PopularCategories";
+
 import TestQinhan from '@/pages/Test Pages/TestQInhan';
-const Home = lazy(() => import('@/pages/Home'));
+
+
+import Home from '@/pages/Home';
+
 
 const routers = [
   {
     path: '/',
     element: <Home />,
+    children: [
+        {
+            path: 'about',
+            element: <></>
+        },
+        {
+            path: 'blog',
+            element: <></>
+        },
+        {
+            path: 'contact',
+            element: <></>
+        }
+    ]
   },
   {
     path: '/test-component',
@@ -18,4 +35,5 @@ const routers = [
     element:<TestQinhan/>,
   }
 ];
+
 export default routers;
