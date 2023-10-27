@@ -8,6 +8,7 @@ import Products from "@/components/Products";
 import NavVertical from '../components/NavVertical'
 import Blog3 from '@/components/Blog3';
 import SearchBar from '@/components/SearchBar';
+import TestQinhan from "./Test Pages/TestQInhan";
 
 
 // import { useOutlet } from "react-router-dom";
@@ -49,7 +50,20 @@ const Home = () => {
                 {/* <div className='w-full'> */}
                 {/* <Outlet /> */}
                 <div className="grid grid-cols-4">
-                    
+                   
+                    <TestQinhan/>
+                    <TestQinhan/>
+                    <TestQinhan/>
+                    <TestQinhan/>
+                    <TestQinhan/>
+                    <TestQinhan/>
+                    <TestQinhan/>
+                    <TestQinhan/>
+                    <TestQinhan/>
+                    <TestQinhan/>
+                    <TestQinhan/>
+                    <TestQinhan/>
+
                 </div>
          </div> 
          </div>
