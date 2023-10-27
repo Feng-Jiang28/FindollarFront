@@ -2,9 +2,13 @@ import PopularCategories from "@/components/PopularCategories";
 import Hero from "@/components/Hero"
 import Recommendation from "@/components/Recommendation"
 import Navbar from "@/components/Navbar";
+
+import Products from "@/components/Products";
+
 import NavVertical from '../components/NavVertical'
 import Blog3 from '@/components/Blog3';
 import SearchBar from '@/components/SearchBar';
+
 
 // import { useOutlet } from "react-router-dom";
 //const Recommendation = () => <div className="p-6 bg-gray-200">Recommendation</div>

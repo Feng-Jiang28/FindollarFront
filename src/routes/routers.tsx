@@ -1,6 +1,11 @@
 
 import PopularCategories from "@/components/PopularCategories";
+
+import TestQinhan from '@/pages/Test Pages/TestQInhan';
+
+
 import Home from '@/pages/Home';
+
 
 const routers = [
   {
@@ -24,6 +29,10 @@ const routers = [
   {
     path: '/test-component',
     element:<PopularCategories/>,
+  },
+  {
+    path: '/test-xqh',
+    element:<TestQinhan/>,
   }
 ];
 
