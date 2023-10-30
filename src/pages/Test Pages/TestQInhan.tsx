@@ -1,9 +1,9 @@
 import ProductCard from '@/components/common/ProductCard.tsx';
 
-const TestQinhan = () => {
+const TestQinhan = ({setOpenPost}:any) => {
 
   return(
-    <div>
+    <div onClick={() => setOpenPost(true)}>
       <ProductCard
                 imageUrl='https://via.placeholder.com/183X162'
                 title="Awesome Brand - Cool product with nice colo…"

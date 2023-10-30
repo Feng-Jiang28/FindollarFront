@@ -9,12 +9,14 @@ import NavVertical from '../components/NavVertical'
 import Blog3 from '@/components/Blog3';
 import SearchBar from '@/components/SearchBar';
 import TestQinhan from "./Test Pages/TestQInhan";
+import Post from "./Post";
+import { useState } from "react";
 
 
 // import { useOutlet } from "react-router-dom";
 //const Recommendation = () => <div className="p-6 bg-gray-200">Recommendation</div>
 const Home = () => {
-
+    const [openPost, setOpenPost] = useState(false)
   return (
     <div className="bg-gray-100 flex flex-col w-full h-full border border-red-300 ">
         
@@ -51,6 +53,8 @@ const Home = () => {
                 {/* <Outlet /> */}
                 <div className="grid grid-cols-4">
                    
+                    <TestQinhan setOpenPost={setOpenPost}/>
+                    {/* <TestQinhan/>
                     <TestQinhan/>
                     <TestQinhan/>
                     <TestQinhan/>
@@ -60,12 +64,13 @@ const Home = () => {
                     <TestQinhan/>
                     <TestQinhan/>
                     <TestQinhan/>
-                    <TestQinhan/>
-                    <TestQinhan/>
-                    <TestQinhan/>
+                    <TestQinhan/> */}
 
                 </div>
          </div> 
+         {openPost &&
+         <Post setOpenPost={setOpenPost}></Post>
+}
          </div>
        
 
