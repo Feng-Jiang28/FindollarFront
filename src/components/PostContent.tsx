@@ -2,26 +2,31 @@ import React from 'react';
 import { Avatar, Button } from 'antd';
 import 'tailwindcss/tailwind.css';
 
-import { Tooltip } from 'antd';
-import { HeartOutlined, MessageOutlined, RetweetOutlined, HeartFilled } from '@ant-design/icons';
-
-import { StarOutlined, AtOutlined, MoreOutlined } from '@ant-design/icons';
-
+import { HeartOutlined, MessageOutlined } from '@ant-design/icons';
+import { StarOutlined } from '@ant-design/icons';
 import { Carousel } from 'antd';
-
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
-
 import { useRef } from 'react';
 
 const PostContent: React.FC = () => {
+  const closePage = () => {
+    window.location.href = '/';
+  };
 
     const carouselRef = useRef(null);
     return (
         <div className="h-full flex">
-            <div className="w-1/2 bg-black border border-red-500">
-                {/*<div>*/}
+          <button
+            onClick={closePage}
+            className="absolute top-0 left-0 m-4 rounded-full bg-black text-white focus:outline-none"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </button>
+
+            <div className="w-1/2 bg-black">
                 <Carousel ref={carouselRef}>
-                    {/*<Carousel arrows>*/}
                     <img src="/img/Guaiguai.png" alt="Slide 5/7" className="h-full object-cover" />
                     <img src="/img/Guaiguai.png" alt="Slide 5/7" className="h-full object-cover" />
                     <img src="/img/Guaiguai.png" alt="Slide 5/7" className="h-full object-cover" />
@@ -43,33 +48,29 @@ const PostContent: React.FC = () => {
                 >
                     <RightOutlined className="text-white hover:text-gray-400" />
                 </div>
-
-                {/*}</div>*/}
             </div>
 
             <div className="w-1/2 bg-black text-white p-4 flex flex-col">
-
                 <div className="flex justify-between h-[10%]">
                     <div className="flex items-center mb-4">
+                      <button className="inline-flex">
                         <Avatar src="/img/Guaiguai.png" />
-                        <div className="ml-4">
-                            <p className="font-bold">乖乖</p>
-                        </div>
+                        <span>
+                          <p className="ml-2 font-bold">乖乖</p>
+                        </span>
+                      </button>
                     </div>
-                    <button className="space-x-4 bg-red-500 hover:bg-blue-700 text-white font-bold h-8 px-4 rounded">
+                    <button className="space-x-4 bg-red-500 text-white font-bold h-8 px-4 rounded">
                         关注
                     </button>
                 </div>
 
-
-
-                <div className="overflow-y-auto h-[75%] border border-yellow-300">
+                <div className="overflow-y-auto h-[75%]">
                     <h3 className="font-bold text-lg mb-4">
                         我的午餐: 发给爸妈的vs实际吃的
                     </h3>
                     <p className="mb-4">
                         这个月想减肥定了个十斤的小目标，我妈比我还紧张，就是生怕我少吃了一点。天天查岗一样监督我吃饭早知道不和她说了
-
                     </p>
                     <div className="flex items-center mb-4">
                         <p className="font-bold text-gray-400 mr-2">#妈妈的爱</p>
@@ -85,10 +86,17 @@ const PostContent: React.FC = () => {
                     <p className="text-gray-400 mr-2">共 10+ 条评论</p>
 
                     <div className="mt-2 bg-black shadow-md rounded-md space-y-4">
-                        <div className="flex space-x-4">
-                            <Avatar src="/img/Guaiguai.png" />
-                            <div>
-                                <h4 className="font-bold">yoke.</h4>
+                        <div  className="flex space-x-4">
+                              <div>
+                                <button className="inline-flex">
+                                  <Avatar src="/img/Guaiguai.png" />
+                                </button>
+                              </div>
+
+                              <div>
+                                <button>
+                                    <p className="font-bold">yoke.</p>
+                                </button>
                                 <p>
                                     亲测吃鸡胸肉三天瘦了1.2斤。吃虾三天瘦了3.7斤。不知道我算不算大基数, 体重132,现在127了。
                                 </p>
@@ -98,11 +106,10 @@ const PostContent: React.FC = () => {
                                 <Button type="text" className="text-gray-900" icon={<MessageOutlined className="text-white" />} />
                                 <span className="pr-4">4</span>
 
-
                                 <div className="flex space-x-4 ml-2">
-                                    <Avatar src="/img/Guaiguai.png" />
+                                  <div><button><Avatar src="/img/Guaiguai.png" /></button></div>
                                     <div>
-                                        <h4 className="font-bold">家有宝贝（两只可爱的猫咪）</h4>
+                                        <button><h4 className="font-bold">家有宝贝（两只可爱的猫咪）</h4></button>
                                         <p>
                                             肯定是大基数啊，一百以内才是小基数。
                                         </p>
@@ -114,17 +121,14 @@ const PostContent: React.FC = () => {
                                     </div>
                                 </div>
 
-
                                 <div className="flex space-x-4 ml-2">
-                                    <Avatar src="/img/Guaiguai.png" />
+                                  <div><button><Avatar src="/img/Guaiguai.png" /></button></div>
                                     <div>
-                                        <h4 className="font-bold">做人没必要太正常</h4>
+                                        <button><h4 className="font-bold">做人没必要太正常</h4></button>
                                         <div>
                                             <span>回复：</span>
                                             <span className="text-gray-400">家有宝贝（两只可爱的猫咪）</span>肯定是大基数啊，一百以内才是小基数。
                                         </div>
-
-
                                         <p className="text-gray-400 mr-2">今天 01:25 江西</p>
                                         <Button type="text" className="text-gray-900" icon={<HeartOutlined className="text-white" />} />
                                         <span className="pr-4">赞</span>
@@ -133,15 +137,12 @@ const PostContent: React.FC = () => {
                                     </div>
                                 </div>
 
-
-
                             </div>
                         </div>
                     </div>
                 </div>
 
-
-                <div className="bg-black text-white p-4 h-[15%]">
+                <div className="bg-black text-white p-1.5 h-[15%]">
                     <div className="flex justify-between items-center mb-4">
                         <div className="flex space-x-6">
                             <span className="flex items-center space-x-0.1">
@@ -161,7 +162,6 @@ const PostContent: React.FC = () => {
                         <button className="rounded">
                             <img src="/img/share.png" alt="share" className="w-5 h-5" />
                         </button>
-
                     </div>
                     <div className="relative mt-4 rounded-full bg-gray-900">
                         <input
@@ -177,19 +177,18 @@ const PostContent: React.FC = () => {
                             </button>
 
                             <button className="rounded">
-                                {/* <img src="/img/smileFace.png" alt="smileFace" className="w-8 h-8" />
-                                 */}
-                                 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24">
-  <path fill="none" d="M0 0h24v24H0V0z"/>
-  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.95-5.05a.662.662 0 0 0-.95 0c-.2.2-.2.51 0 .71C16.74 16.29 17.5 17 18 17s1.26-.71 1.95-1.95c.2-.2.2-.51 0-.71a.662.662 0 0 0-.95 0C18.59 15.27 18 15.62 18 16s.59.73.95.95zm-9.9 0a.662.662 0 0 0-.95 0c-.2.2-.2.51 0 .71C6.74 16.29 7.5 17 8 17s1.26-.71 1.95-1.95c.2-.2.2-.51 0-.71a.662.662 0 0 0-.95 0C7.59 15.27 7 15.62 7 16s.59.73.95.95zM12 6c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2h2c0-2.21-1.79-4-4-4z"/>
-</svg>
-
+                              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="8" />
+                                <circle cx="9" cy="10" r="0.4" />
+                                <circle cx="15" cy="10" r="0.4" />
+                                <path d="M8 13s1 1.5 4 1.5 4-1.5 4-1.5" />
+                              </svg>
                             </button>
                         </div>
                     </div>
+
                 </div>
             </div>
-
         </div>
 
     );
