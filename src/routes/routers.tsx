@@ -6,6 +6,8 @@ import TestQinhan from '@/pages/Test Pages/TestQInhan';
 
 import Home from '@/pages/Home';
 
+import PersonalPg from '@/pages/PersonalPg';
+
 
 const routers = [
   {
@@ -33,6 +35,10 @@ const routers = [
   {
     path: '/test-xqh',
     element:<TestQinhan/>,
+  },
+  {
+    path: '/personal',
+    element:<PersonalPg />,
   }
 ];
 
