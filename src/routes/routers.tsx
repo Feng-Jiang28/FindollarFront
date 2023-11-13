@@ -4,6 +4,7 @@ import PopularCategories from "@/components/PopularCategories";
 import Home from '@/pages/Home';
 import Filter from '@/components/Filter';
 import FilterTest from '@/components/FilterTest';
+import Login from '@/components/Login';
 
 const routers = [
   {
@@ -26,7 +27,7 @@ const routers = [
   },
   {
     path: '/test-component',
-    element:<Filter/>,
+    element:<Login/>,
   }
 ];
 
