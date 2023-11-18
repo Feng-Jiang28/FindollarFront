@@ -5,6 +5,8 @@ import TestQinhan from '@/pages/Test Pages/TestQInhan';
 
 
 import Home from '@/pages/Home';
+import Filter from '@/components/Filter';
+import FilterTest from '@/components/FilterTest';
 
 
 const routers = [
@@ -28,11 +30,12 @@ const routers = [
   },
   {
     path: '/test-component',
-    element:<PopularCategories/>,
+    element:<Filter/>,
   },
   {
     path: '/test-xqh',
     element:<TestQinhan/>,
+
   }
 ];
 

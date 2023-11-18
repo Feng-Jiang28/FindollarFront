@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: orange;
+  border-color: orange;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -26,3 +32,4 @@ body {
       height: 100%;
       width: 100%;
   }
+
