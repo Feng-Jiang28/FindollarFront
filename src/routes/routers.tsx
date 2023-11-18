@@ -1,9 +1,13 @@
-import { lazy } from 'react';
+
 import PopularCategories from "@/components/PopularCategories";
-// const Home = lazy(() => import('@/pages/Home'));
+
+import TestQinhan from '@/pages/Test Pages/TestQInhan';
+
+
 import Home from '@/pages/Home';
 import Filter from '@/components/Filter';
 import FilterTest from '@/components/FilterTest';
+
 
 const routers = [
   {
@@ -27,6 +31,11 @@ const routers = [
   {
     path: '/test-component',
     element:<Filter/>,
+  },
+  {
+    path: '/test-xqh',
+    element:<TestQinhan/>,
+
   }
 ];
 

@@ -6,14 +6,20 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize:{
+        '11': '11px'
+      },
       colors: {
         'gray-400': '#BDBDBD',
         'secondary-1': '#23856D',
         'gray-900': '#252B42',
         'gray-600': '#737373',
         'gray-300': '#ECECEC',
+        'gray1': '#808080'
       },
       width: {
+        '14w': '14px',
+        '203': '203px',
         '183': '183px',
         '658': '658px',
         '113': '113px',
@@ -21,6 +27,8 @@ export default {
         '389': '389px',
       },
       height: {
+        '24w': '24px',
+        '352': '352px',
         '324': '324px',
         '48': '48px',
         '2': '2px',
