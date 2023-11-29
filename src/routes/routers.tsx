@@ -5,6 +5,7 @@ import Home from '@/pages/Home';
 import Filter from '@/components/Filter';
 import FilterTest from '@/components/FilterTest';
 import Login from '@/components/Login';
+import Post from '@/components/post';
 
 const routers = [
   {
@@ -27,7 +28,7 @@ const routers = [
   },
   {
     path: '/test-component',
-    element:<Login/>,
+    element: <Post />,
   }
 ];
 
