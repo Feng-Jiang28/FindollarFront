@@ -1,12 +1,12 @@
 
-import PopularCategories from "@/components/PopularCategories";
+// import PopularCategories from "@/components/PopularCategories";
 
 import TestQinhan from '@/pages/Test Pages/TestQInhan';
 
 
 import Home from '@/pages/Home';
 import Filter from '@/components/Filter';
-import FilterTest from '@/components/FilterTest';
+// import FilterTest from '@/components/FilterTest';
 
 
 const routers = [
