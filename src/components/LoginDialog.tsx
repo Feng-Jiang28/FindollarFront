@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Modal, Form, Input, Button, Checkbox, FormInstance } from 'antd';
+import { Modal, Form, Input, Button, Checkbox } from 'antd';
 
 
 //import React from 'react';
 //import { Modal, Form, Input, Button } from 'antd';
-import { QrcodeOutlined, WechatOutlined, AlipayCircleOutlined, QqOutlined } from '@ant-design/icons';
+import { WechatOutlined } from '@ant-design/icons';
 
 const LoginDialog: React.FC = () => {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(true);
@@ -27,7 +27,7 @@ const LoginDialog: React.FC = () => {
   return (
     <Modal
 
-      visible={isModalVisible}
+      open={isModalVisible}
       onOk={() => handleOk}
       onCancel={handleCancel}
       footer={null}
@@ -44,9 +44,9 @@ const LoginDialog: React.FC = () => {
           </div>
           <p className="text-black mt-4">使用 Findollar/微信/QQ 扫码登录</p>
           <Button className="border-none mt-6 inline-flex items-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
+            {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6 h-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
-            </svg>
+            </svg> */}
             <span>教程</span>
           </Button>
 

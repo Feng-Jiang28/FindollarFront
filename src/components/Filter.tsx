@@ -1,7 +1,7 @@
 
 
 // Filter.tsx
-import React,{ useState } from 'react';
+import { useState } from 'react';
 import { Checkbox, InputNumber, Tag, Button, Collapse, ConfigProvider } from 'antd';
 import { StarFilled} from '@ant-design/icons';
 import type { CollapseProps } from 'antd';
