@@ -1,5 +1,4 @@
-
-import { Card, Button, Tabs} from 'antd';
+import { Card, Button, Tabs } from 'antd';
 import 'antd/dist/reset.css';
 import { AreaChartOutlined,RightOutlined,ClockCircleOutlined } from '@ant-design/icons';
 const { TabPane } = Tabs;
