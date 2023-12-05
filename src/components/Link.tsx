@@ -6,7 +6,7 @@ function Link({ to, children }: { to: string; children: React.ReactNode; }) {
             to={to}
             // end
             className={({ isActive }) => `font-normal text-gray-600 hover:text-black tracking-tight select-none flex 
-                subpixel-antialiased ${isActive && "text-red-300"}`}
+                subpixel-antialiased ${isActive && "text-[#333333]"}`}
         >
             {children}
         </NavLink>
