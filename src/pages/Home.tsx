@@ -12,14 +12,22 @@ import TestQinhan from "./Test Pages/TestQInhan";
 import Post from "./Post";
 import { useState } from "react";
 
+import LoginDialog from "@/components/LoginDialog";
+
 
 // import { useOutlet } from "react-router-dom";
 //const Recommendation = () => <div className="p-6 bg-gray-200">Recommendation</div>
 const Home = () => {
     const [openPost, setOpenPost] = useState(false)
   return (
+
     <div className="bg-white flex flex-col w-full h-full">
         
+
+    <div className="bg-gray-100 flex flex-col w-full h-full border border-red-300 ">
+      <LoginDialog />
+
+
       {/*Xiaoshu*/}
       <Navbar />
       <div className='flex grow min-h-0 w-full'>
@@ -29,7 +37,7 @@ const Home = () => {
                 dest: 'sales_order',
                 icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-              </svg>  
+              </svg>
             },
             {
                 label: 'Price',
@@ -44,7 +52,7 @@ const Home = () => {
                 icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
               </svg>
-              
+
             },
         ]}></NavVertical>
             {/* <NavLink to="/print" target="_blank">Print Invoice</NavLink> */}
@@ -52,7 +60,7 @@ const Home = () => {
                 {/* <div className='w-full'> */}
                 {/* <Outlet /> */}
                 <div className="grid grid-cols-4">
-                   
+
                     <TestQinhan setOpenPost={setOpenPost}/>
                     {/* <TestQinhan/>
                     <TestQinhan/>
@@ -67,14 +75,14 @@ const Home = () => {
                     <TestQinhan/> */}
 
                 </div>
-         </div> 
+         </div>
          {openPost &&
          <Post setOpenPost={setOpenPost}></Post>
 }
          </div>
-       
 
- 
+
+
       {/* <Hero />
 
 
