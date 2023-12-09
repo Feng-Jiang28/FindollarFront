@@ -20,8 +20,13 @@ import LoginDialog from "@/components/LoginDialog";
 const Home = () => {
     const [openPost, setOpenPost] = useState(false)
   return (
+
+    <div className="bg-white flex flex-col w-full h-full">
+        
+
     <div className="bg-gray-100 flex flex-col w-full h-full border border-red-300 ">
       <LoginDialog />
+
 
       {/*Xiaoshu*/}
       <Navbar />
@@ -51,7 +56,7 @@ const Home = () => {
             },
         ]}></NavVertical>
             {/* <NavLink to="/print" target="_blank">Print Invoice</NavLink> */}
-         <div className="grow h-full overflow-auto flex flex-col py-5 relative bg-slate-100 border border-yellow-300">
+         <div className="grow h-full overflow-auto flex flex-col py-5 relative ">
                 {/* <div className='w-full'> */}
                 {/* <Outlet /> */}
                 <div className="grid grid-cols-4">

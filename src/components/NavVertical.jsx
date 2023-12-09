@@ -4,12 +4,15 @@ import { useState } from 'react';
 function NavVertical({ arr }) {
     // const [open, setOpen] = useState(true) // control the opening of the side bar
     return (
-        <div className='relative flex z-10'>
-            <div className='flex flex-col w-max space-y-3 bg-gradient-to-r 
-                from-[#403a84f8] to-slate-100 pt-5'>
-                    {arr.map((row, index) => <Link dest={row.dest} key={index} >
+        <div className='relative flex z-10 w-1/6 mx-4'>
+            <div className='flex flex-col w-full space-y-3 pt-5'>
+                    {arr.map((row, index) => 
+                    <div className="rounded-3xl p-4 hover:bg-[#f7f7f7]">
+                      <Link dest={row.dest} key={index} >
                         <span className="mr-1 select-none">{row.icon}</span>{row.label}
-                    </Link>)}
+                      </Link>
+                    </div>
+                      )}
             </div>
             
             {/* <svg onClick={() => setOpen(!open)} xmlns="http://www.w3.org/2000/svg" fill="none" 

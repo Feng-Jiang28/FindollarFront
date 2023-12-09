@@ -70,7 +70,7 @@ import SearchBar from "./SearchBar.tsx";
 const Navbar = () => {
 
     return (
-        <div className="bg-white p-4 shadow-md font-normal">
+        <div className="bg-white p-4 font-normal">
             <div className="w-full flex justify-between items-center">
                 {/* Logo Section */}
                 <div className="flex items-center">
